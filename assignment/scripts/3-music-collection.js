@@ -27,17 +27,32 @@ console.log(addToCollection("Arntor", "Windir", "1999"));
 
 console.log(collection);
 
-function showCollection(array){
+function showCollection(array) {
+  console.log("Number of ablums: ", array.length);
 
-console.log("Number of ablums: ", array.length)
-
-for (element of array){
-   console.log(element.title + " by " + element.artist + " published in year " + element.yearPublished)
+  for (element of array) {
+    console.log(
+      element.title +
+        " by " +
+        element.artist +
+        " published in year " +
+        element.yearPublished
+    );
+  }
 }
+
+showCollection(collection);
+
+function findByArtist(artist, array) {
+  let albumsWithArtist = [];
+  for (element of array) {
+    if (artist === element.artist) {
+      albumsWithArtist.push(element);
+    }
+  }
+  return albumsWithArtist;
 }
 
-showCollection(collection)
+console.log(findByArtist("Windir", collection))
+console.log(findByArtist("Meshuggah", collection))
 
-function findByArtist(artist){
-    
-}
