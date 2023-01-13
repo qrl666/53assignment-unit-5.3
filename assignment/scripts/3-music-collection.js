@@ -61,7 +61,7 @@ function search(searchObject, array) {
     return collection
   }
   for (element of array) {
-    if (searchObject.artist === element.artist && searchObject.year === element.yearPublished) {
+    if (searchObject.artist === element.artist && searchObject.year === element.yearPublished || searchObject.artist === element.artist && searchObject.year === undefined ||searchObject.artist === undefined && searchObject.year === element.yearPublished) {
       albumsBySearch.push(element);
     } //if 
   }//for of
@@ -73,3 +73,4 @@ console.log("In search: ", search({ artist: "Meshuggah", year: "1999" }, collect
 console.log("In search: ", search({ artist: "Meshuggah", year: "2014" }, collection));
 console.log("In search: ", search());
 console.log("In search: ", search({}));
+console.log("In search: ", search({ artist: "Black Flag" }, collection));
