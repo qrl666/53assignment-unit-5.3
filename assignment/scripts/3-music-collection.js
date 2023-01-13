@@ -44,15 +44,27 @@ function showCollection(array) {
 showCollection(collection);
 
 function findByArtist(artist, array) {
-  let albumsWithArtist = [];
+  let albumsByArtist = [];
   for (element of array) {
     if (artist === element.artist) {
-      albumsWithArtist.push(element);
+      albumsByArtist.push(element);
     }
   }
-  return albumsWithArtist;
+  return albumsByArtist;
 }
 
-console.log(findByArtist("Windir", collection))
-console.log(findByArtist("Meshuggah", collection))
+console.log(findByArtist("Black Flag", collection));
+console.log(findByArtist("Meshuggah", collection));
 
+function search({ artist: artist, year: yearPublished }, array) {
+    let albumsBySearch = [];
+    for (element of array){ 
+        if (artist == element.artist || yearPublished == element.yearPublished){
+            albumsBySearch.push(element)
+        }
+    }
+    return albumsBySearch
+}
+
+console.log(search({ artist: "Black Flag", year: "1993" }, collection));
+console.log(search({ artist: "Meshuggah", year: "2001" }, collection));
