@@ -98,9 +98,27 @@ function showCollection(array) {
         " published in year " +
         element.yearPublished
     );
-    console.log(" 1. ", "Name: ", tracks[0].name, "Duration:", tracks[0].duration);
-    console.log(" 2. ", "Name: ", tracks[1].name, "Duration:", tracks[1].duration);
-    console.log(" 3. ", "Name: ", tracks[2].name, "Duration:", tracks[2].duration); //console log
+    console.log(
+      " 1. ",
+      "Name: ",
+      element.tracks[0].name,
+      "Duration:",
+      element.tracks[0].duration
+    );
+    console.log(
+      " 2. ",
+      "Name: ",
+      element.tracks[1].name,
+      "Duration:",
+      tracks[1].duration
+    );
+    console.log(
+      " 3. ",
+      "Name: ",
+      element.tracks[2].name,
+      "Duration:",
+      element.tracks[2].duration
+    ); //console log
   } //for of
 } //function
 
