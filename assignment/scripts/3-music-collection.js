@@ -20,8 +20,8 @@ console.log(
     "1993",
     (tracks = [
       { name: "Bring da Ruckus", duration: "4:10" },
-      { name: "Clan in da Front", time: "4:33" },
-      { name: "Wu-Tang-7th Chamber", time: "6:05" },
+      { name: "Clan in da Front", duration: "4:33" },
+      { name: "Wu-Tang-7th Chamber", duration: "6:05" },
     ])
   )
 );
@@ -31,9 +31,9 @@ console.log(
     "Tove Lo",
     "2014",
     (tracks = [
-      { name: "Equally Lost", time: "2:15" },
-      { name: "Are U gonna tell her?", time: "2:40" },
-      { name: "Shifted", time: "3:12" },
+      { name: "Equally Lost", duration: "2:15" },
+      { name: "Are U gonna tell her?", duration: "2:40" },
+      { name: "Shifted", duration: "3:12" },
     ])
   )
 );
@@ -43,9 +43,9 @@ console.log(
     "Black Flag",
     "1981",
     (tracks = [
-      { name: "Room 13", time: "2:07" },
-      { name: "Damaged I", time: "3:51" },
-      { name: "Life of Pain", time: "2:53" },
+      { name: "Room 13", duration: "2:07" },
+      { name: "Damaged I", duration: "3:51" },
+      { name: "Life of Pain", duration: "2:53" },
     ])
   )
 );
@@ -55,9 +55,9 @@ console.log(
     "Black Flag",
     "1984",
     (tracks = [
-      { name: "Can't Decide", time: "5:22" },
-      { name: "Nothing Left Inside", time: "6:34" },
-      { name: "My War", time: "3:46" },
+      { name: "Can't Decide", duration: "5:22" },
+      { name: "Nothing Left Inside", duration: "6:34" },
+      { name: "My War", duration: "3:46" },
     ])
   )
 );
@@ -67,9 +67,9 @@ console.log(
     "Digable Planets",
     "1993",
     (tracks = [
-      { name: "Last of the Spiddyocks", time: "4:28" },
-      { name: "Where I'm From", time: "4:35" },
-      { name: "Rebirth of Slick (Cool Like Dat)[Explicit]", time: "4:21" },
+      { name: "Last of the Spiddyocks", duration: "4:28" },
+      { name: "Where I'm From", duration: "4:35" },
+      { name: "Rebirth of Slick (Cool Like Dat)[Explicit]", duration: "4:21" },
     ])
   )
 );
@@ -79,9 +79,9 @@ console.log(
     "Windir",
     "1999",
     (tracks = [
-      { name: "Byrjing", time: "3:17" },
-      { name: "Arntor, ein Windir", time: "6:56" },
-      { name: "Kong Hydnes haug", time: "6:36" },
+      { name: "Byrjing", duration: "3:17" },
+      { name: "Arntor, ein Windir", duration: "6:56" },
+      { name: "Kong Hydnes haug", duration: "6:36" },
     ])
   )
 );
@@ -97,7 +97,10 @@ function showCollection(array) {
         element.artist +
         " published in year " +
         element.yearPublished
-    ); //console log
+    );
+    console.log(" 1. ", "Name: ", tracks[0].name, "Duration:", tracks[0].duration);
+    console.log(" 2. ", "Name: ", tracks[1].name, "Duration:", tracks[1].duration);
+    console.log(" 3. ", "Name: ", tracks[2].name, "Duration:", tracks[2].duration); //console log
   } //for of
 } //function
 
